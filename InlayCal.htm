@@ -1,0 +1,2533 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-tw" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="http://bobokkj6868.myweb.hinet.net/favicon.ico" />
+<title>呆灣策略聯盟 - 鑲嵌計算機</title>
+<style type="text/css">
+.style3 {
+	margin-bottom: 0px;
+}
+.style4 {
+	text-align: left;
+}
+#picker { width: 70px; height: 70px }
+#slide { width: 20px; height: 70px }
+div{ float:left}
+a {
+	color: #800080;
+}
+a:active {
+	color: #800080;
+}
+a:hover {
+	color: #800080;
+}
+</style>
+<script type="text/javascript" src="colorpicker.js"></script>
+<script type="text/javascript" language="javascript"> 
+var i;
+var blk;
+var limit1;
+var limit2;
+var br = unescape("%0A");
+var labelctrl = 0;
+var copper = 0;
+var steel = 0;
+var preciousmetal = 0;
+var silicon = 0;
+var gem = 0;
+var sulfur = 0;
+var tapwater = 0;
+var distilledwater = 0;
+var normaltimber = 0;
+var hightimber = 0;
+var refinedtimber = 0;
+var naturalgas = 0;
+var petroleum = 0;
+var liquidfuel = 0;
+var chickenriceball = 0;
+var bbqcorn = 0;
+var steamedcrab = 0;
+var steamedroll = 0;
+var beershrimp = 0;
+var milk = 0;
+var beer = 0;
+var medicatedwine = 0;
+var whiskey = 0;
+var gloves = 0;
+var boots = 0;
+var cloak = 0;
+var pearljewel = 0;
+var gemjewel = 0;
+var glass = 0;
+var board = 0;
+var bed = 0;
+var television = 0;
+var audio = 0;
+var airconditioner = 0;
+var barrel = 0;
+var fishingrod = 0;
+var pickax = 0;
+var drill = 0;
+var saw = 0;
+var bucket = 0;
+var shovel = 0;
+var manmadefibers = 0;
+var plastic = 0;
+var rubber = 0;
+var mold = 0;
+var mechanicalstructure = 0;
+var engine = 0;
+var wire = 0;
+var integratedcircuit = 0;
+var tire = 0;
+var carbody = 0;
+var boatbody = 0;
+var rowboat = 0;
+var car = 0;
+var truck = 0;
+var tent = 0;
+var bandage = 0;
+var antidote = 0;
+var flashlight = 0;
+var fist = 0;
+var stick = 0;
+var blade = 0;
+var sword = 0;
+var axe = 0;
+var halberd = 0;
+var belt = 0;
+var bracers = 0;
+var leggings = 0;
+var helm = 0;
+var breastplate = 0;
+var Herbageperfume = 0;
+var sunflowerperfume = 0;
+var herbperfume = 0;
+var lilyperfume = 0;
+var roseperfume = 0;
+var compactdisk = 0;
+var flute = 0;
+var guitar = 0;
+var mitt = 0;
+var bat = 0;
+var landmine = 0;
+var rocket = 0;
+var antimissile = 0;
+var missile = 0;
+var nuclearbomb = 0;
+var planebody = 0;
+var glider = 0;
+
+function mooa() {
+reset();
+var myindex=document.getElementById("select").value;
+if (myindex == 1) {var chickenriceball = document.getElementById("num").value;
+mchickenriceball(chickenriceball);}
+if (myindex == 2) {var bbqcorn = document.getElementById("num").value;
+mbbqcorn(bbqcorn);}
+if (myindex == 3 || myindex == 26) {var steamedcrab = document.getElementById("num").value;
+msteamedcrab(steamedcrab);}
+if (myindex == 4 || myindex == 27) {var steamedroll = document.getElementById("num").value;
+msteamedroll(steamedroll);}
+if (myindex == 5) {var beershrimp = document.getElementById("num").value;
+mbeershrimp(beershrimp);}
+if (myindex == 6 || myindex == 28) {var milk = document.getElementById("num").value;
+mmilk(milk);}
+if (myindex == 7) {var beer = document.getElementById("num").value;
+mbeer(beer);}
+if (myindex == 8 || myindex == 29) {var medicatedwine = document.getElementById("num").value;
+mmedicatedwine(medicatedwine);}
+if (myindex == 9 || myindex == 30) {var whiskey = document.getElementById("num").value;
+mwhiskey(whiskey);}
+if (myindex == 10) {var bed = document.getElementById("num").value;
+mbed(bed);}
+if (myindex == 11 || myindex == 31) {var television = document.getElementById("num").value;
+mtelevision(television);}
+if (myindex == 12 || myindex == 32) {var audio = document.getElementById("num").value;
+maudio(audio);}
+if (myindex == 13 || myindex == 33) {var airconditioner = document.getElementById("num").value;
+mairconditioner(airconditioner);}
+if (myindex == 14) {var fishingrod = document.getElementById("num").value;
+mfishingrod(fishingrod);}
+if (myindex == 15 || myindex == 34) {var herbageperfume = document.getElementById("num").value;
+mherbageperfume(herbageperfume);}
+if (myindex == 16 || myindex == 35) {var sunflowerperfume = document.getElementById("num").value;
+msunflowerperfume(sunflowerperfume);}
+if (myindex == 17 || myindex == 36) {var herbperfume = document.getElementById("num").value;
+mherbperfume(herbperfume);}
+if (myindex == 18 || myindex == 37) {var lilyperfume = document.getElementById("num").value;
+mlilyperfume(lilyperfume);}
+if (myindex == 19 || myindex == 38) {var roseperfume = document.getElementById("num").value;
+mroseperfume(roseperfume);}
+if (myindex == 20) {var rowboat = document.getElementById("num").value;
+mrowboat(rowboat);}
+if (myindex == 21) {var car = document.getElementById("num").value;
+mcar(car);}
+if (myindex == 22) {var truck = document.getElementById("num").value;
+mtruck(truck);}
+if (myindex == 23) {var tent = document.getElementById("num").value;
+mtent(tent);}
+if (myindex == 24) {var bandage = document.getElementById("num").value;
+mbandage(bandage);}
+if (myindex == 25) {var rocket = document.getElementById("num").value;
+mrocket(rocket);}
+}
+
+function reset() {
+document.area1.TextArea1.value = "";
+document.area2.TextArea2.value = "";
+document.area3.TextArea3.value = "";
+document.area4.TextArea4.value = "";
+}
+
+function prev() {
+checklimit();
+
+}
+
+function checklimit() {
+var tmp = document.getElementById("inlayte1").value;
+if (tmp >limit1) {document.getElementById("inlayte1").value = limit1;}
+var tmp = document.getElementById("inlayte2").value;
+if (tmp >limit2) {document.getElementById("inlayte2").value = limit2;}
+
+}
+
+function setinfom() {
+document.getElementById("inlayte1").value = 0;
+document.getElementById("inlayte2").value = 0;
+var myindex=document.getElementById("select").value;
+if (myindex == 1) {
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="雞肉(Chicken)";
+document.getElementById("effect2").textContent="+12回復/個(上限30個)";
+limit2 = 30;
+}
+if (myindex == 2) {
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="玉米(Corn)";
+document.getElementById("effect2").textContent="+8回復/個(上限30個)";
+limit2 = 30;
+}
+if (myindex == 3) {
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="大閘蟹(Big Crab)";
+document.getElementById("effect2").textContent="+20回復/個(上限30個)";
+limit2 = 30;
+}
+if (myindex == 4) {
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="小麥(Wheat)";
+document.getElementById("effect2").textContent="+5回復/個(上限30個)";
+limit2 = 30;
+}
+if (myindex == 5) {
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="草蝦(Big Shrimp)";
+document.getElementById("effect2").textContent="+1%回復/個(上限30個)";
+limit2 = 30;
+}
+if (myindex == 6) {document.getElementById("inlayla1").textContent="生乳(Raw Milk)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 7) {document.getElementById("inlayla1").textContent="大麥(Barley)";
+document.getElementById("effect1").textContent="+20回復/個(上限30個)";
+limit1 = 30;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 8) {document.getElementById("inlayla1").textContent="鹿茸(Antler)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 9) {document.getElementById("inlayla1").textContent="大麥(Barley)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 10) {document.getElementById("inlayla1").textContent="羊毛(Wool)";
+document.getElementById("effect1").textContent="+1回復/5個(上限100個)";
+limit1 = 100;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 11) {document.getElementById("inlayla1").textContent="金屬(Metal)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 12) {document.getElementById("inlayla1").textContent="原木(Wood)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 13) {document.getElementById("inlayla1").textContent="清水(Water)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 14) {document.getElementById("inlayla1").textContent="原木(Wood)";
+document.getElementById("effect1").textContent="+1000耐久/個(上限200個)";
+limit1 = 200;
+document.getElementById("inlayla2").textContent="金屬(Metal)";
+document.getElementById("effect2").textContent="+1等級/個(上限60個)";
+limit2 = 60;
+}
+if (myindex == 15) {document.getElementById("inlayla1").textContent="牧草(Herbage)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 16) {document.getElementById("inlayla1").textContent="向日葵(Sunflower)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 17) {document.getElementById("inlayla1").textContent="藥草(Herb)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 18) {document.getElementById("inlayla1").textContent="百合(Lily)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 19) {document.getElementById("inlayla1").textContent="玫瑰(Rose)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 20) {var rowboat = document.getElementById("num").value;
+mrowboat(rowboat);}
+if (myindex == 21) {document.getElementById("inlayla1").textContent="靛色元素(Indigo Element)";
+document.getElementById("effect1").textContent="+空間上限，每級為鑲嵌數開根號";
+limit1 = 1000000000;
+document.getElementById("inlayla2").textContent="藍色元素(Blue Element)";
+document.getElementById("effect2").textContent="+負重上限/kg，每級為鑲嵌數開根號";
+limit2 = 1000000000;
+}
+if (myindex == 22) {var truck = document.getElementById("num").value;
+mtruck(truck);}
+if (myindex == 23) {document.getElementById("inlayla1").textContent="金屬(Metal)";
+document.getElementById("effect1").textContent="+20耐久/個(無上限)";
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 24) {document.getElementById("inlayla1").textContent="棉花(Cotton)";
+document.getElementById("effect1").textContent="+2回復/個(上限100個)";
+limit1 = 100;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 25) {document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="+1射程/100個(必須多1)";
+limit1 = 1001;
+document.getElementById("inlayla2").textContent="金屬(Metal)";
+document.getElementById("effect2").textContent="+1傷害半徑/100個(必須多1)";
+limit2 = 501;
+}
+
+if (myindex == 26) {
+document.getElementById("num").value = 10000;
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="大閘蟹(Big Crab)";
+document.getElementById("effect2").textContent="+20回復/個(上限30個)";
+document.getElementById("inlayte2").value = 30;
+limit2 = 30;
+}
+if (myindex == 27) {
+document.getElementById("num").value = 10000;
+document.getElementById("inlayla1").textContent="燃料(Fuel)";
+document.getElementById("effect1").textContent="-10g/個(上限10個)";
+limit1 = 10;
+document.getElementById("inlayla2").textContent="小麥(Wheat)";
+document.getElementById("effect2").textContent="+5回復/個(上限30個)";
+limit2 = 30;
+document.getElementById("inlayte2").value = 30;
+}
+if (myindex == 28) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="生乳(Raw Milk)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+document.getElementById("inlayte1").value = 1051200;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 29) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="鹿茸(Antler)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+document.getElementById("inlayte1").value = 1051200;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 30) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="大麥(Barley)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+document.getElementById("inlayte1").value = 1051200;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+}
+if (myindex == 31) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="金屬(Metal)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+document.getElementById("inlayte1").value = 1051200;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 32) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="原木(Wood)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+document.getElementById("inlayte1").value = 1051200;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 33) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="清水(Water)";
+document.getElementById("effect1").textContent="+30秒/個(無上限)";
+document.getElementById("inlayte1").value = 1051200;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 34) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="牧草(Herbage)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+document.getElementById("inlayte1").value = 525600;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 35) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="向日葵(Sunflower)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+document.getElementById("inlayte1").value = 525600;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 36) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="藥草(Herb)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+document.getElementById("inlayte1").value = 525600;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 37) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="百合(Lily)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+document.getElementById("inlayte1").value = 525600;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+if (myindex == 38) {
+document.getElementById("num").value = 1;
+document.getElementById("inlayla1").textContent="玫瑰(Rose)";
+document.getElementById("effect1").textContent="+60秒/個(無上限)";
+document.getElementById("inlayte1").value = 525600;
+limit1 = 100000000;
+document.getElementById("inlayla2").textContent="無";
+document.getElementById("effect2").textContent="無";
+limit2 = 0;
+}
+
+}
+
+function display(str) {
+if (labelctrl == 1) {
+tmp2 = document.area1.TextArea1.value;
+tmp = document.area1.TextArea1.value+str;
+if ( tmp2  != null) {
+document.area1.TextArea1.value = tmp+br;} 
+else {
+document.area1.TextArea1.value = str+br;}
+}
+
+if (labelctrl == 2) {
+tmp2 = document.area2.TextArea2.value;
+tmp = document.area2.TextArea2.value+str;
+if ( tmp2  != null) {
+document.area2.TextArea2.value = tmp+br;} 
+else {
+document.area2.TextArea2.value = str+br;}
+}
+
+if (labelctrl == 3) {
+tmp2 = document.area3.TextArea3.value;
+tmp = document.area3.TextArea3.value+str;
+if ( tmp2  != null) {
+document.area3.TextArea3.value = tmp+br;} 
+else {
+document.area3.TextArea3.value = str+br;}
+}
+
+if (labelctrl == 4) {
+tmp2 = document.area4.TextArea4.value;
+tmp = document.area4.TextArea4.value+str;
+if ( tmp2  != null) {
+document.area4.TextArea4.value = tmp+br;} 
+else {
+document.area4.TextArea4.value = str+br;}
+}
+
+}
+
+
+function emp(x) {
+for (i=1;i<=x;i++){
+display("　");
+}
+}
+
+function fm(x) {
+for (i=x;i<=4;i++) {
+labelctrl += 1;
+display("　");
+}
+for (i=x;i<=4;i++) {
+labelctrl -= 1;
+}
+}
+
+
+function mcopper(x) {
+var metal = x*10;
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function msteel(x) {
+var metal = x*20;
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mpreciousmetal(x) {
+var metal = x*50;
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function msilicon(x) {
+var stone = x*10;
+temp = "原石(Stone): "+stone;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mgem(x) {
+var stone = x*20;
+temp = "原石(Stone): "+stone;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function msulfur(x) {
+var stone = x*50;
+temp = "原石(Stone): "+stone;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mtapwater(x) {
+var water = x*10;
+temp = "清水(Water): "+water;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mdistilledwater(x) {
+var water = x*20;
+temp = "清水(Water): "+water;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mnormaltimber(x) {
+var wood = x*10;
+temp = "原木(Wood): "+wood;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mhightimber(x) {
+var wood = x*20;
+temp = "原木(Wood): "+wood;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mrefinedtimber(x) {
+var wood = x*50;
+temp = "原木(Wood): "+wood;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mnaturalgas(x) {
+var fuel = x*10;
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mpetroleum(x) {
+var fuel = x*20;
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mliquidfuel(x) {
+var fuel = x*50;
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mchickenriceball(x) {
+var rice = x*8;
+temp = "稻米(Rice): "+rice;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var naturalgas = x*2;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var chicken = x*3+eval(document.getElementById("inlayte2").value)*x;
+temp = "雞肉(Chicken): "+chicken;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var fuel = document.getElementById("inlayte1").value;
+if ( fuel > 0) {
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"產品重量: "+eval(200-eval(fuel*10))+"<br />"+"補充HP: "+eval(300+eval(eval(document.getElementById("inlayte2").value)*12));
+}
+
+function mbbqcorn(x) {
+var corn = x*10+eval(document.getElementById("inlayte2").value)*x;
+temp = "玉米(Corn): "+corn;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var normaltimber = x*5;
+temp = "一般木材(Normal Timber): "+normaltimber;
+labelctrl += 1;
+display(temp);
+mnormaltimber(normaltimber);
+labelctrl -= 1;
+var fuel = document.getElementById("inlayte1").value;
+if ( fuel > 0) {
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"產品重量: "+eval(200-eval(fuel*10))+"<br />"+"補充HP: "+eval(200+eval(eval(document.getElementById("inlayte2").value)*8));
+}
+
+function msteamedcrab(x) {
+var tapwater = x*2;
+temp = "自來水(Tap Water): "+tapwater;
+labelctrl += 1;
+display(temp);
+mtapwater(tapwater);
+labelctrl -= 1;
+var naturalgas = x*2;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var bigcrab = x*1+eval(document.getElementById("inlayte2").value)*x;
+temp = "大閘蟹(Big Crab): "+bigcrab;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var fuel = document.getElementById("inlayte1").value;
+if ( fuel > 0) {
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"產品重量: "+eval(200-eval(fuel*10))+"<br />"+"補充HP: "+eval(400+eval(eval(document.getElementById("inlayte2").value)*20));
+}
+
+function msteamedroll(x) {
+var tapwater = x*5;
+temp = "自來水(Tap Water): "+tapwater;
+labelctrl += 1;
+display(temp);
+mtapwater(tapwater);
+labelctrl -= 1;
+var naturalgas = x*1;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var wheat = x*5+eval(document.getElementById("inlayte2").value)*x;
+temp = "小麥(Wheat): "+wheat;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var fuel = document.getElementById("inlayte1").value;
+if ( fuel > 0) {
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"產品重量: "+eval(200-eval(fuel*10))+"<br />"+"每2秒回復HP: "+eval(50+eval(eval(document.getElementById("inlayte2").value)*5));
+}
+
+function mbeershrimp(x) {
+var naturalgas = x*2;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var bigshrimp = x*1+eval(document.getElementById("inlayte2").value)*x;
+temp = "草蝦(Big Shrimp): "+bigshrimp;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var beer = x;
+temp = "啤酒(Beer): "+beer;
+labelctrl += 1;
+display(temp);
+mbeer(beer);
+labelctrl -= 1;
+var fuel = document.getElementById("inlayte1").value;
+if ( fuel > 0) {
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"產品重量: "+eval(200-eval(fuel*10))+"<br />"+"1秒後回復HP: "+eval(20+eval(eval(document.getElementById("inlayte2").value)*1))+"%";
+}
+
+function  mmilk(x) {
+var glass = x;
+temp = "玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var naturalgas = x;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var rawmilk =x*1+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "生乳(Raw Milk): "+rawmilk;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*30);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【豐富營養】效果：str+2 體力回復+5";
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function mbeer(x) {
+var barrel = x;
+temp = "木桶(barrel): "+barrel;
+labelctrl += 1;
+display(temp);
+mbarrel(barrel);
+labelctrl -= 1;
+var distilledwater = x;
+temp = "蒸餾水(Distilled Water): "+distilledwater;
+labelctrl += 1;
+display(temp);
+mdistilledwater(distilledwater);
+labelctrl -= 1;
+var barley = x*1+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "大麥(Barley): "+barley;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+emp(3);
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"回復體力: "+eval(500+eval(eval(document.getElementById("inlayte1").value)*20));
+}
+
+function mmedicatedwine(x) {
+var glass = x;
+temp = "玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var distilledwater = x*2;
+temp = "蒸餾水(Distilled Water): "+distilledwater;
+labelctrl += 1;
+display(temp);
+mdistilledwater(distilledwater);
+labelctrl -= 1;
+var antler = x*1+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "鹿茸(Antler): "+antler;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*30);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【舒筋活血】效果："+"<br />"+"phy+2 生命回復+10 生命上限+100";
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function mwhiskey(x) {
+var glass = x*2;
+temp = "玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var distilledwater = x*5;
+temp = "蒸餾水(Distilled Water): "+distilledwater;
+labelctrl += 1;
+display(temp);
+mdistilledwater(distilledwater);
+labelctrl -= 1;
+var barley = x*15+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "大麥(Barley): "+barley;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*30);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【血液循環】效果："+"<br />"+"str+1 dex+1 生命回復+5 生命上限+50";
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function mgloves(x) {
+var cotton = x*10;
+temp = "棉花(Cotton): "+cotton;
+labelctrl += 1;
+display(temp);
+labelctrl -= 1;
+fm(labelctrl);
+var leather = x*5;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+emp(1);
+}
+
+function mboots(x) {
+var wool = x*10;
+temp = "羊毛(Wool): "+wool;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var leather = x*5;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mcloak(x) {
+var cotton = x*20;
+temp = "棉花(Cotton): "+cotton;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var manmadefibers = x*30;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+}
+
+function  mpearljewel(x) {
+var pearl = x*2;
+temp = "珍珠(Pearl): "+pearl;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var preciousmetal = x*50;
+temp = "貴金屬(preciousmetal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+emp(1);
+}
+
+function  mgemjewel(x) {
+var gem = x*50;
+temp = "寶石(Gem): "+gem;
+labelctrl += 1;
+display(temp);
+mgem(gem);
+labelctrl -= 1;
+var preciousmetal = x*50;
+temp = "貴金屬(preciousmetal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+emp(1);
+}
+
+function mglass(x) {
+var silicon = x*4;
+temp ="矽沙(Silicon): "+silicon;
+labelctrl += 1;
+display(temp);
+msilicon(silicon);
+labelctrl -= 1;
+}
+
+function mboard(x) {
+var normaltimber = x*30;
+temp ="一般木材(Normal Timber): "+normaltimber;
+labelctrl += 1;
+display(temp);
+mnormaltimber(normaltimber);
+labelctrl -= 1;
+}
+
+function mbed(x) {
+var cotton = x*10;
+temp = "棉花(Cotton): "+cotton;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var hightimber = x*30;
+temp ="高級木材(High Timber): "+hightimber;
+labelctrl += 1;
+display(temp);
+mhightimber(hightimber);
+labelctrl -= 1;
+var wool = x*5+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "羊毛(Wool): "+wool;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"回復效果: "+eval(90+Math.floor(eval(eval(document.getElementById("inlayte1").value)/5)));
+}
+
+function mtelevision(x) {
+var glass = x*5;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var wire = x;
+temp ="電線(Wire): "+wire;
+labelctrl += 1;
+display(temp);
+mwire(wire);
+labelctrl -= 1;
+var integratedcircuit = x;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var mold = x;
+temp ="模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+var metal =eval(eval(document.getElementById("inlayte1").value)*x);
+if (metal > 0){
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*30);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【掌握時事】效果："+"<br />"+"Str+1 Phy+1 Int+3 Agi+1 Cha+2";
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function maudio(x) {
+var refinedtimber = x*5;
+temp ="精製木材(Refined Timber): "+refinedtimber;
+labelctrl += 1;
+display(temp);
+mrefinedtimber(refinedtimber);
+labelctrl -= 1;
+var wire = x;
+temp ="電線(Wire): "+wire;
+labelctrl += 1;
+display(temp);
+mwire(wire);
+labelctrl -= 1;
+var integratedcircuit = x*2;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var plastic = x*3;
+temp ="塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+var wood =eval(eval(document.getElementById("inlayte1").value)*x);
+if (wood > 0){
+temp = "原木(Wood): "+wood;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*30);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function mairconditioner(x) {
+var wire = x*2;
+temp ="電線(Wire): "+wire;
+labelctrl += 1;
+display(temp);
+mwire(wire);
+labelctrl -= 1;
+var mechanicalstructure = x;
+temp ="機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var steel = x*5;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var integratedcircuit = x*2;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var water =eval(eval(document.getElementById("inlayte1").value)*x);
+if (water > 0){
+temp = "清水(Water): "+water;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*30);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function mbarrel(x) {
+var normaltimber = x*20;
+temp ="一般木材(Normal Timber): "+normaltimber;
+labelctrl += 1;
+display(temp);
+mnormaltimber(normaltimber);
+labelctrl -= 1;
+var steel = x;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+emp(1);
+}
+
+function mfishingrod(x) {
+var manmadefibers = x;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var plastic = x;
+temp ="塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+var wood =eval(eval(document.getElementById("inlayte1").value)*x);
+if (wood > 0){
+temp = "原木(Wood): "+wood;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+var metal =eval(eval(document.getElementById("inlayte2").value)*x);
+if (metal > 0){
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"耐久度: "+eval(100000+eval(wood*1000))+"<br />"+"釣竿等級: "+eval(40+eval(eval(document.getElementById("inlayte2").value)*1));
+}
+
+function mtool(x) {
+var normaltimber = x*8;
+temp ="一般木材(Normal Timber): "+normaltimber;
+labelctrl += 1;
+display(temp);
+mnormaltimber(normaltimber);
+labelctrl -= 1;
+var steel = x*4;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+}
+
+function mmanmadefibers(x) {
+var naturalgas = x*2;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var petroleum = x;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+emp(1);
+}
+
+function mplastic(x) {
+var naturalgas = x*3;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var petroleum = x;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+emp(1);
+}
+
+function mrubber(x) {
+var naturalgas = x*4;
+temp = "天然氣(Natural Gas): "+naturalgas;
+labelctrl += 1;
+display(temp);
+mnaturalgas(naturalgas);
+labelctrl -= 1;
+var petroleum = x;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+emp(1);
+}
+
+function mmold(x) {
+var steel = x*10;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+}
+
+function mmechanicalstructure(x) {
+var normaltimber = x*10;
+temp = "一般木材(Normal Timber): "+normaltimber;
+labelctrl += 1;
+display(temp);
+mnormaltimber(normaltimber);
+labelctrl -= 1;
+var steel = x*20;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+emp(1);
+}
+
+function mengine(x) {
+var mechanicalstructure = x*3;
+temp ="機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var integratedcircuit = x*1;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+emp(5);
+}
+
+function mwire(x) {
+var copper = x*5;
+temp = "銅線(Copper): "+copper;
+labelctrl += 1;
+display(temp);
+mcopper(copper);
+labelctrl -= 1;
+var plastic = x*1;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+emp(2);
+}
+
+function mintegratedcircuit(x){
+var silicon = x*10;
+temp = "矽砂(Silicon): "+silicon;
+labelctrl += 1;
+display(temp);
+msilicon(silicon);
+labelctrl -= 1;
+var distilledwater = x*10;
+temp = "蒸餾水(Distilled Water): "+distilledwater;
+labelctrl += 1;
+display(temp);
+mdistilledwater(distilledwater);
+labelctrl -= 1;
+var preciousmetal = x*10;
+temp = "貴金屬(Precious Metal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+emp(2);
+}
+
+function mtire(x) {
+var rubber = x*8;
+temp = "橡膠(Rubber): "+rubber;
+labelctrl += 1;
+display(temp);
+mrubber(rubber);
+labelctrl -= 1;
+emp(1);
+}
+
+function mcarbody(x) {
+var steel = x*50;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mechanicalstructure = x*2;
+temp ="機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+emp(3);
+}
+
+function mboatbody(x) {
+var steel = x*50;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mechanicalstructure = x*2;
+temp ="機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+emp(3);
+}
+
+function mrowboat(x) {
+var boatbody = x;
+temp = "船體(Boat Body): "+boatbody;
+labelctrl += 1;
+display(temp);
+mboatbody(boatbody);
+labelctrl -= 1;
+var engine = x;
+temp = "引擎(Engine): "+engine;
+labelctrl += 1;
+display(temp);
+mengine(engine);
+labelctrl -= 1;
+var petroleum = x*100;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+var normaltimber = x*100;
+temp = "一般木材(Normal Timber): "+normaltimber;
+labelctrl += 1;
+display(temp);
+mnormaltimber(normaltimber);
+labelctrl -= 1;
+var integratedcircuit = x*1;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+}
+
+function mcar(x) {
+var carbody = x;
+temp = "車體(Car Body): "+carbody;
+labelctrl += 1;
+display(temp);
+mcarbody(carbody);
+labelctrl -= 1;
+var engine = x;
+temp = "引擎(Engine): "+engine;
+labelctrl += 1;
+display(temp);
+mengine(engine);
+labelctrl -= 1;
+var petroleum = x*100;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+var tire = x*4;
+temp = "輪胎(Tire): "+tire;
+labelctrl += 1;
+display(temp);
+mtire(tire);
+labelctrl -= 1;
+var integratedcircuit = x*1;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var leather = x*5;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var indigo =eval(eval(document.getElementById("inlayte1").value)*x);
+if (indigo > 0){
+temp = "靛色元素(Indigo Element): "+indigo;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+var blue =eval(eval(document.getElementById("inlayte2").value)*x);
+if (blue > 0){
+temp = "藍色元素(Blue Element): "+blue;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"空間上限: "+eval(10+eval(Math.floor(Math.sqrt(indigo))))+"<br />"+"負重上限: "+eval(180+Math.floor(Math.sqrt(blue))*10);
+}
+
+function mtruck(x) {
+var carbody = x;
+temp = "車體(Car Body): "+carbody;
+labelctrl += 1;
+display(temp);
+mcarbody(carbody);
+labelctrl -= 1;
+var engine = x;
+temp = "引擎(Engine): "+engine;
+labelctrl += 1;
+display(temp);
+mengine(engine);
+labelctrl -= 1;
+var petroleum = x*500;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+var tire = x*14;
+temp = "輪胎(Tire): "+tire;
+labelctrl += 1;
+display(temp);
+mtire(tire);
+labelctrl -= 1;
+var mechanicalstructure = x*5;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var integratedcircuit = x*1;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var steel = x*100;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+
+}
+
+function mtent(x) {
+var manmadefibers = x;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var steel = x;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var metal =eval(eval(document.getElementById("inlayte1").value)*x);
+if (metal > 0){
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"耐久度: "+eval(500+eval(metal*20));
+}
+function mbandage(x) {
+var cotton = x*10+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "棉花(Cotton): "+cotton;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var plastic = x*2
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"補充HP: "+eval(100+eval(document.getElementById("inlayte1").value)*2);
+}
+
+function mantidote(x) {
+var glass = x;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var distilledwater = x*10;
+temp = "蒸餾水(Distilled Water): "+distilledwater;
+labelctrl += 1;
+display(temp);
+mdistilledwater(distilledwater);
+labelctrl -= 1;
+var herb = x*10;
+temp = "藥草(Herb): "+herb;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mflashlight(x) {
+var glass = x*2;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var wire = x;
+temp ="電線(Wire): "+wire;
+labelctrl += 1;
+display(temp);
+mwire(wire);
+labelctrl -= 1;
+var plastic = x;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+}
+
+function mfist(x) {
+var leather = x*4;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var steel = x*60;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var plastic = x*2;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+}
+
+function mstick(x){
+var hightimber = x*60;
+temp ="高級木材(High Timber): "+hightimber;
+labelctrl += 1;
+display(temp);
+mhightimber(hightimber);
+labelctrl -= 1;
+var plastic = x*4;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+emp(3);
+}
+
+function mblade(x) {
+var steel = x*60;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var plastic = x*6;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function msword(x) {
+var gemjewel = x*2;
+temp = "寶石飾品(Gem Jewel): "+gemjewel;
+labelctrl += 1;
+display(temp);
+mgemjewel(gemjewel);
+labelctrl -= 1;
+var manmadefibers = x*15;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var steel = x*150;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mold = x*6;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function maxe(x) {
+var refinedtimber = x*5;
+temp ="精製木材(Refined Timber): "+refinedtimber;
+labelctrl += 1;
+display(temp);
+mrefinedtimber(refinedtimber);
+labelctrl -= 1;
+var pearljewel = x*3;
+temp = "珍珠飾品(Pearl Jewel): "+pearljewel;
+labelctrl += 1;
+display(temp);
+mpearljewel(pearljewel);
+labelctrl -= 1;
+var steel = x*150;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mhalberd(x) {
+var rubber = x*15;
+temp = "橡膠(Rubber): "+rubber;
+labelctrl += 1;
+display(temp);
+mrubber(rubber);
+labelctrl -= 1;
+var manmadefibers = x*20;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var mechanicalstructure = x*15;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var steel = x*150;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+}
+
+function mbelt(x){
+var leather = x*6;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var steel = x*20;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+}
+
+function mbracers(x) {
+var manmadefibers = x*25;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var steel = x*20;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+}
+
+function mleggings(x) {
+var leather = x*4;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var steel = x*20;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mold = x*6;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mhelm(x) {
+var steel = x*20;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mold = x*8;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mbreastplate(x) {
+var manmadefibers = x*10;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var leather = x*4;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var steel = x*20;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mold = x*6;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mherbageperfume(x) {
+var glass = x*1;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var herbage = x*600+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "牧草(Herbage): "+herbage;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*60);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【牧草清香】效果：Cha+4 社經獲得加成+5%";
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function msunflowerperfume(x) {
+var glass = x*1;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var sunflower = x*80+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "向日葵(Sunflower): "+sunflower;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*60);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【向日葵清香】效果：Cha+4 Agi+1";
+document.getElementById("introdula").innerHTML = temp;
+}
+function mherbperfume(x) {
+var glass = x*1;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var herb = x*100+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "藥草(Herb): "+herb;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*60);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【藥草清香】效果：Cha+4 體力回復+2/(2s)";
+document.getElementById("introdula").innerHTML = temp;
+}
+function mlilyperfume(x) {
+var glass = x*1;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var lily = x*80+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "百合(Lily): "+lily;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+temp ="效果預覽："+"<br />"+"持續時間: ";
+var time = eval(eval(document.getElementById("inlayte1").value)*60);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【百合清香】效果：Cha+4 Agi+1";
+document.getElementById("introdula").innerHTML = temp;
+}
+function mroseperfume(x) {
+var glass = x*1;
+temp ="玻璃(Glass): "+glass;
+labelctrl += 1;
+display(temp);
+mglass(glass);
+labelctrl -= 1;
+var rose = x*80+eval(eval(document.getElementById("inlayte1").value)*x);
+temp = "玫瑰(Rose): "+rose;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var time = eval(eval(document.getElementById("inlayte1").value)*60);
+if (Math.floor(time/31536000) > 0 ) { temp += Math.floor(time/31536000)+" 年  ";}
+if (Math.floor(time%31536000/2592000) > 0 ) { temp += Math.floor(time%31536000/2592000)+" 月  ";}
+if (Math.floor(time%2592000/86400) > 0 ) { temp += Math.floor(time%2592000/86400)+" 日  ";}
+if (Math.floor(time%86400/3600) > 0 ) { temp += Math.floor(time%86400/3600)+" 時  ";}
+if (Math.floor(time%3600/60) > 0 ) { temp += Math.floor(time%3600/60)+" 分  ";}
+if (Math.floor(time%60) > 0 ) { temp += Math.floor(time%60)+" 秒  ";}
+temp += "<br />"+"【玫瑰清香】效果：Cha+4 Phy+1";
+document.getElementById("introdula").innerHTML = temp;
+}
+
+function mcompactdisk(x) {
+var preciousmetal = x*2;
+temp = "貴金屬(Precious Metal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+var sulfur = x*1;
+temp = "硫磺(Sulfur): "+sulfur;
+labelctrl += 1;
+display(temp);
+msulfur(sulfur);
+labelctrl -= 1;
+var plastic = x*2;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+}
+
+function mflute(x) {
+var refinedtimber = x*10;
+temp ="精製木材(Refined Timber): "+refinedtimber;
+labelctrl += 1;
+display(temp);
+mrefinedtimber(refinedtimber);
+labelctrl -= 1;
+var preciousmetal = x*2;
+temp = "貴金屬(Precious Metal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+var mold = x*3;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mguitar(x){
+var refinedtimber = x*15;
+temp ="精製木材(Refined Timber): "+refinedtimber;
+labelctrl += 1;
+display(temp);
+mrefinedtimber(refinedtimber);
+labelctrl -= 1;
+var manmadefibers = x*6;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var mechanicalstructure = x*1;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var steel = x*6;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+}
+
+function mmitt(x){
+var cotton = x*25;
+temp = "棉花(Cotton): "+cotton;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+var gloves = x*5;
+temp = "手套(Gloves): "+gloves;
+labelctrl += 1;
+display(temp);
+mgloves(gloves);
+labelctrl -= 1;
+var manmadefibers = x*10;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var leather = x*50;
+temp = "皮革(Leather): "+leather;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+
+function mbat(x) {
+var refinedtimber = x*25;
+temp ="精製木材(Refined Timber): "+refinedtimber;
+labelctrl += 1;
+display(temp);
+mrefinedtimber(refinedtimber);
+labelctrl -= 1;
+var manmadefibers = x*10;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var preciousmetal = x*10;
+temp = "貴金屬(Precious Metal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+var stick = x*1;
+temp = "棍(Stick): "+stick;
+labelctrl += 1;
+display(temp);
+mstick(stick);
+labelctrl -= 1;
+}
+
+function mlandmine(x) {
+var wire = x;
+temp ="電線(Wire): "+wire;
+labelctrl += 1;
+display(temp);
+mwire(wire);
+labelctrl -= 1;
+var sulfur = x*3;
+temp = "硫磺(Sulfur): "+sulfur;
+labelctrl += 1;
+display(temp);
+msulfur(sulfur);
+labelctrl -= 1;
+var mold = x*1;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mrocket(x) {
+var liquidfuel = x*3;
+temp = "液態燃料(Liquid Fuel): "+liquidfuel;
+labelctrl += 1;
+display(temp);
+mliquidfuel(liquidfuel);
+labelctrl -= 1;
+var integratedcircuit = x*1;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var mechanicalstructure = x*1;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var sulfur = x*10;
+temp = "硫磺(Sulfur): "+sulfur;
+labelctrl += 1;
+display(temp);
+msulfur(sulfur);
+labelctrl -= 1;
+var plastic = x*1;
+temp = "塑膠(Plastic): "+plastic;
+labelctrl += 1;
+display(temp);
+mplastic(plastic);
+labelctrl -= 1;
+var fuel =eval(eval(document.getElementById("inlayte1").value)*x);
+if (fuel > 0){
+temp = "燃料(Fuel): "+fuel;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+var metal =eval(eval(document.getElementById("inlayte2").value)*x);
+if (metal > 0){
+temp = "金屬(Metal): "+metal;
+labelctrl += 1;
+display(temp);
+fm(labelctrl);
+labelctrl -= 1;
+}
+document.getElementById("introdula").innerHTML = "效果預覽："+"<br />"+"射程 "+eval(2+Math.floor(eval(fuel-1)/100))+" 格"+"<br />"+"傷害範圍半徑 "+eval(1+Math.floor(eval(metal-1)/100));
+}
+
+function mantimissile(x) {
+var petroleum = x*5;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+var integratedcircuit = x*2;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var mechanicalstructure = x*2;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+}
+
+function mmissile(x) {
+var liquidfuel = x*8;
+temp = "液態燃料(Liquid Fuel): "+liquidfuel;
+labelctrl += 1;
+display(temp);
+mliquidfuel(liquidfuel);
+labelctrl -= 1;
+var rubber = x*1;
+temp = "橡膠(Rubber): "+rubber;
+labelctrl += 1;
+display(temp);
+mrubber(rubber);
+labelctrl -= 1;
+var integratedcircuit = x*3;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var mechanicalstructure = x*2;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var sulfur = x*12;
+temp = "硫磺(Sulfur): "+sulfur;
+labelctrl += 1;
+display(temp);
+msulfur(sulfur);
+labelctrl -= 1;
+}
+
+function mnuclearbomb(x) {
+var liquidfuel = x*100;
+temp = "液態燃料(Liquid Fuel): "+liquidfuel;
+labelctrl += 1;
+display(temp);
+mliquidfuel(liquidfuel);
+labelctrl -= 1;
+var gem = x*20;
+temp = "寶石(Gem): "+gem;
+labelctrl += 1;
+display(temp);
+mgem(gem);
+labelctrl -= 1;
+var manmadefibers = x*5;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var preciousmetal = x*50;
+temp = "貴金屬(Precious Metal): "+preciousmetal;
+labelctrl += 1;
+display(temp);
+mpreciousmetal(preciousmetal);
+labelctrl -= 1;
+var integratedcircuit = x*10;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+}
+
+function mplanebody(x){
+var manmadefibers = x*10;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var steel = x*90;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var mechanicalstructure = x*3;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var mold = x*5;
+temp = "模具(Mold): "+mold;
+labelctrl += 1;
+display(temp);
+mmold(mold);
+labelctrl -= 1;
+emp(5)
+}
+
+function mglider(x) {
+var engine = x*2;
+temp = "引擎(Engine): "+engine;
+labelctrl += 1;
+display(temp);
+mengine(engine);
+labelctrl -= 1;
+var petroleum = x*500;
+temp = "石油(Petroleum): "+petroleum;
+labelctrl += 1;
+display(temp);
+mpetroleum(petroleum);
+labelctrl -= 1;
+var planebody = x*1;
+temp = "飛機機體(Plane Body): "+planebody;
+labelctrl += 1;
+display(temp);
+mplanebody(planebody);
+labelctrl -= 1;
+var manmadefibers = x*30;
+temp = "人造纖維(Man Made Fibers): "+manmadefibers;
+labelctrl += 1;
+display(temp);
+mmanmadefibers(manmadefibers);
+labelctrl -= 1;
+var wire = x*10;
+temp ="電線(Wire): "+wire;
+labelctrl += 1;
+display(temp);
+mwire(wire);
+labelctrl -= 1;
+var steel = x*100;
+temp = "鋼鐵(Steel): "+steel;
+labelctrl += 1;
+display(temp);
+msteel(steel);
+labelctrl -= 1;
+var tire = x*5;
+temp = "輪胎(Tire): "+tire;
+labelctrl += 1;
+display(temp);
+mtire(tire);
+labelctrl -= 1;
+var mechanicalstructure = x*5;
+temp = "機構(Mechanical Structure): "+mechanicalstructure;
+labelctrl += 1;
+display(temp);
+mmechanicalstructure(mechanicalstructure);
+labelctrl -= 1;
+var integratedcircuit = x*5;
+temp ="積體電路(Integrated Circuit): "+integratedcircuit;
+labelctrl += 1;
+display(temp);
+mintegratedcircuit(integratedcircuit);
+labelctrl -= 1;
+}
+</script> 
+</head>
+
+<body style="color: #000080; background-color: #669933">
+
+<table style="width: 100%">
+	<tr>
+		<td style="height: 78px">
+		<form onsubmit="return false" method="post" style="width: 216px" action="--WEBBOT-SELF--">
+			<!--webbot bot="SaveResults" S-Builtin-Fields="" S-Form-Fields="" -->
+			<select id="select" onchange="setinfom()" style="width: 213px" name="D1">
+			<option>請選擇</option>
+			<optgroup label="常用補品速選"> 
+			<option value="26">（滿）清蒸大閘蟹 x 一萬</option>
+			<option value="27">（滿）饅頭 x 一萬</option>
+			</optgroup>
+			<optgroup label="年度物品速選">
+			<option value="28">（年度）牛奶</option>
+			<option value="29">（年度）藥酒</option>
+			<option value="30">（年度）威士忌</option>
+			<option value="31">（年度）電視機</option>
+			<option value="32">（年度）音響</option>
+			<option value="33">（年度）冷氣機</option>
+			<option value="34">（年度）牧草香水</option>
+			<option value="35">（年度）向日葵香水</option>
+			<option value="36">（年度）藥草香水</option>
+			<option value="37">（年度）百合香水</option>
+			<option value="38">（年度）玫瑰香水</option>
+			</optgroup>
+			<optgroup label="食品飲料"> 
+			<option value="1">雞肉飯糰(Chicken Rice Ball)</option>
+			<option value="2">炭烤玉米(Bbq Corn)</option>
+			<option value="3">清蒸大閘蟹(Steamed Crab)</option>
+			<option value="4">饅頭(Steamed Roll)</option>
+			<option value="5">啤酒蝦(Beer Shrimp)</option>
+			<option value="6">牛奶(Milk)</option>
+			<option value="7">啤酒(Beer)</option>
+			<option value="8">藥酒(Medicated Wine)</option>
+			<option value="9">威士忌(Whiskey)</option>
+			</optgroup>
+			<optgroup label="家電用品"> 
+			<option value="10">床(Bed)</option>
+			<option value="11">電視機(Television)</option>
+			<option value="12">音響(Audio)</option>
+			<option value="13">冷氣機(Air Conditioner)</option>
+			<option value="14">釣竿(Fishing Rod)</option>
+			</optgroup>
+			<optgroup label="香水"> 
+			<option value="15">牧草香水(Herbage Perfume)</option>
+			<option value="16">向日葵香水(Sunflower Perfume)</option>
+			<option value="17">藥草香水(Herb Perfume)</option>
+			<option value="18">百合香水(Lily Perfume)</option>
+			<option value="19">玫瑰香水(Rose Perfume)</option>
+			</optgroup>
+			<optgroup label="運輸載具"> 
+			<option value="21">汽車(Car)</option>
+			</optgroup>
+			<optgroup label="冒險用品"> 
+			<option value="23">帳篷(Tent)</option>
+			<option value="24">繃帶(Bandage)</option>
+			</optgroup>
+			<optgroup label="遠距武器"> 
+			<option value="25">火箭(Rocket)</option>
+			</optgroup></select><br />
+			數量<input id="num" value="1" type="text" style="width: 74px" /><input name="Calbutton" type="button" value="計算" onclick="mooa()" style="height: 21px"/></form>
+		</td>
+		<td valign="top" class="style4" style="height: 78px">
+		<form name="inlay" action="" style="height: 55px">
+			<label id="inlayla1">鑲嵌一</label><br />
+			<input id="inlayte1" type="text" style="width: 75px" onchange="prev()"/><label id="effect1"></label><br />
+			<label id="inlayla2">鑲嵌二</label><br />
+			<input id="inlayte2" type="text" style="width: 75px" onchange="prev()"/><label id="effect2"></label></form>
+		</td>
+		<td valign="top" class="style4" style="height: 78px">
+		<form name="introdu" action="" style="height: 70px">
+			<label id="introdula">效果預覽：</label>
+		</form>
+		</td>
+		<td style="height: 78px">
+		<form method="post" action="" style="height: 69px">
+		<div id="picker"></div>
+                <div id="slide"></div>
+                <script type="text/javascript">
+                  ColorPicker(
+                    document.getElementById('slide'),
+                    document.getElementById('picker'),
+                    function(hex, hsv, rgb) {
+                      document.body.style.backgroundColor = hex;
+                    });
+                </script>
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<form name="area1">
+			<textarea name="TextArea1" class="style3" style="width: 270px; height: 460px" rows="1" cols="20"></textarea></form>
+		</td>
+		<td>
+		<form name="area2">
+			<textarea name="TextArea2" style="width: 270px; height: 460px" rows="1" cols="20"></textarea></form>
+		</td>
+		<td>
+		<form name="area3">
+			<textarea name="TextArea3" style="width: 270px; height: 460px" rows="1" cols="20"></textarea></form>
+		</td>
+		<td>
+		<form name="area4">
+			<textarea name="TextArea4" style="width: 270px; height: 460px" rows="1" cols="20"></textarea></form>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<a href="ProductCal.htm"><strong>產品計算機</strong></a><strong><br />
+		<br />
+		</strong>
+		<a href="ProductCal_StyleII.htm">
+		<strong>產品計算機(直立式)</strong></a></td>
+		<td>
+		<form name="ps" action="" style="height: 69px"><label id="Label1">P.S.：數值可能有誤<br />
+			如造成任何損失本人概不負責<br />
+			回報錯誤請ct或tell我本人</label></form>
+		</td>
+		<td>
+		<script type="text/javascript" id="_wau9wy">var _wau = _wau || []; _wau.push(["small", "qs7w67bs34sy", "9wy"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/small.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script></td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	</table>
+
+</body>
+
+</html>
