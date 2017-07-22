@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -45,394 +45,400 @@ var twater = 0;
 var br = unescape("%0A");
 var want = "I want succes!!"
 var labelctrl = 0;
-var copper = 0;
-var steel = 0;
-var preciousmetal = 0;
-var silicon = 0;
-var gem = 0;
-var sulfur = 0;
-var tapwater = 0;
-var distilledwater = 0;
-var normaltimber = 0;
-var hightimber = 0;
-var refinedtimber = 0;
-var naturalgas = 0;
-var petroleum = 0;
-var liquidfuel = 0;
-var chickenriceball = 0;
-var bbqcorn = 0;
-var steamedcrab = 0;
-var steamedroll = 0;
-var beershrimp = 0;
-var milk = 0;
-var beer = 0;
-var medicatedwine = 0;
-var whiskey = 0;
-var gloves = 0;
-var boots = 0;
-var cloak = 0;
-var pearljewel = 0;
-var gemjewel = 0;
-var glass = 0;
-var board = 0;
-var bed = 0;
-var television = 0;
-var audio = 0;
-var airconditioner = 0;
-var barrel = 0;
-var fishingrod = 0;
-var pickax = 0;
-var drill = 0;
-var saw = 0;
-var bucket = 0;
-var shovel = 0;
-var manmadefibers = 0;
-var plastic = 0;
-var rubber = 0;
-var mold = 0;
-var mechanicalstructure = 0;
-var engine = 0;
-var wire = 0;
-var integratedcircuit = 0;
-var tire = 0;
-var carbody = 0;
-var boatbody = 0;
-var rowboat = 0;
-var car = 0;
-var truck = 0;
-var tent = 0;
-var bandage = 0;
-var antidote = 0;
-var flashlight = 0;
-var fist = 0;
-var stick = 0;
-var blade = 0;
-var sword = 0;
-var axe = 0;
-var halberd = 0;
-var belt = 0;
-var bracers = 0;
-var leggings = 0;
-var helm = 0;
-var breastplate = 0;
-var Herbageperfume = 0;
-var sunflowerperfume = 0;
-var herbperfume = 0;
-var lilyperfume = 0;
-var roseperfume = 0;
-var compactdisk = 0;
-var flute = 0;
-var guitar = 0;
-var mitt = 0;
-var bat = 0;
-var landmine = 0;
-var rocket = 0;
-var antimissile = 0;
-var missile = 0;
-var nuclearbomb = 0;
-var planebody = 0;
-var glider = 0;
 
 function mooa() {
-reset();
-var myindex=document.getElementById("select").value;
-if (myindex == 1) {var copper = document.getElementById("num").value;
-var money = 7500;
-mcopper(copper);}
-if (myindex == 2) {var steel = document.getElementById("num").value;
-var money = 15000;
-msteel(steel);}
-if (myindex == 3) {var preciousmetal = document.getElementById("num").value;
-var money = 37500;
-mpreciousmetal(preciousmetal);}
-if (myindex == 4) {var silicon = document.getElementById("num").value;
-var money = 7500;
-msilicon(silicon);}
-if (myindex == 5) {var gem = document.getElementById("num").value;
-var money = 15000;
-mgem(gem);}
-if (myindex == 6) {var sulfur = document.getElementById("num").value;
-var money = 37500;
-msulfur(sulfur);}
-if (myindex == 7) {var tapwater = document.getElementById("num").value;
-var money = 7500;
-mtapwater(tapwater);}
-if (myindex == 8) {var distilledwater = document.getElementById("num").value;
-var money = 15000;
-mdistilledwater(distilledwater);}
-if (myindex == 9) {var normaltimber = document.getElementById("num").value;
-var money = 7500;
-mnormaltimber(normaltimber);}
-if (myindex == 10) {var hightimber = document.getElementById("num").value;
-var money = 15000;
-mhightimber(hightimber);}
-if (myindex == 11) {var refinedtimber = document.getElementById("num").value;
-var money = 37500;
-mrefinedtimber(refinedtimber);}
-if (myindex == 12) {var naturalgas = document.getElementById("num").value;
-var money = 7500;
-mnaturalgas(naturalgas);}
-if (myindex == 13) {var petroleum = document.getElementById("num").value;
-var money = 15000;
-mpetroleum(petroleum);}
-if (myindex == 14) {var liquidfuel = document.getElementById("num").value;
-var money = 37500;
-mliquidfuel(liquidfuel);}
-if (myindex == 15) {var chickenriceball = document.getElementById("num").value;
-var money = 31650;
-mchickenriceball(chickenriceball);}
-if (myindex == 16) {var bbqcorn = document.getElementById("num").value;
-var money = 57750;
-mbbqcorn(bbqcorn);}
-if (myindex == 17) {var steamedcrab = document.getElementById("num").value;
-var money = 69000;
-msteamedcrab(steamedcrab);}
-if (myindex == 18) {var steamedroll = document.getElementById("num").value;
-var money = 70500;
-msteamedroll(steamedroll);}
-if (myindex == 19) {var beershrimp = document.getElementById("num").value;
-var money = 170850;
-mbeershrimp(beershrimp);}
-if (myindex == 20) {var milk = document.getElementById("num").value;
-var money = 84750;
-mmilk(milk);}
-if (myindex == 21) {var beer = document.getElementById("num").value;
-var money = 90900;
-mbeer(beer);}
-if (myindex == 22) {var medicatedwine = document.getElementById("num").value;
-var money = 148500;
-mmedicatedwine(medicatedwine);}
-if (myindex == 23) {var whiskey = document.getElementById("num").value;
-var money = 254250;
-mwhiskey(whiskey);}
-if (myindex == 24) {var gloves = document.getElementById("num").value;
-var money = 73500;
-mgloves(gloves);}
-if (myindex == 25) {var boots = document.getElementById("num").value;
-var money = 90000;
-mboots(boots);}
-if (myindex == 26) {var cloak = document.getElementById("num").value;
-var money = 2052000;
-mcloak(cloak);}
-if (myindex == 27) {var pearljewel = document.getElementById("num").value;
-var money = 2908500;
-mpearljewel(pearljewel);}
-if (myindex == 28) {var gemjewel = document.getElementById("num").value;
-var money = 3937500;
-mgemjewel(gemjewel);}
-if (myindex == 29) {var glass = document.getElementById("num").value;
-var money = 45000;
-mglass(glass);}
-if (myindex == 30) {var board = document.getElementById("num").value;
-var money = 337500;
-mboard(board);}
-if (myindex == 31) {var bed = document.getElementById("num").value;
-var money = 703500;
-mbed(bed);}
-if (myindex == 32) {var television = document.getElementById("num").value;
-var money = 2235937;
-mtelevision(television);}
-if (myindex == 33) {var audio = document.getElementById("num").value;
-var money = 3445312;
-maudio(audio);}
-if (myindex == 34) {var airconditioner = document.getElementById("num").value;
-var money = 4078125;
-mairconditioner(airconditioner);}
-if (myindex == 35) {var barrel = document.getElementById("num").value;
-var money = 45000;
-mbarrel(barrel);}
-if (myindex == 36) {var fishingrod = document.getElementById("num").value;
-var money = 151875;
-mfishingrod(fishingrod);}
-if (myindex == 37) {var pickax = document.getElementById("num").value;
-var money = 180000;
-mtool(pickax);}
-if (myindex == 38) {var drill = document.getElementById("num").value;
-var money = 180000;
-mtool(drill);}
-if (myindex == 39) {var saw = document.getElementById("num").value;
-var money = 180000;
-mtool(saw);}
-if (myindex == 40) {var bucket = document.getElementById("num").value;
-var money = 180000;
-mtool(bucket);}
-if (myindex == 41) {var shovel = document.getElementById("num").value;
-var money = 180000;
-mtool(shovel);}
-if (myindex == 42) {var manmadefibers = document.getElementById("num").value;
-var money = 45000;
-mmanmadefibers(manmadefibers);}
-if (myindex == 43) {var plastic = document.getElementById("num").value;
-var money = 56250;
-mplastic(plastic);}
-if (myindex == 44) {var rubber = document.getElementById("num").value;
-var money = 67500;
-mrubber(rubber);}
-if (myindex == 45) {var mold = document.getElementById("num").value;
-var money = 225000;
-mmold(mold);}
-if (myindex == 46) {var mechanicalstructure = document.getElementById("num").value;
-var money = 562500;
-mmechanicalstructure(mechanicalstructure);}
-if (myindex == 47) {var engine = document.getElementById("num").value;
-var money = 5568750;
-mengine(engine);}
-if (myindex == 48) {var wire = document.getElementById("num").value;
-var money = 140625;
-mwire(wire);}
-if (myindex == 49) {var integratedcircuit = document.getElementById("num").value;
-var money = 900000;
-mintegratedcircuit(integratedcircuit);}
-if (myindex == 50) {var tire = document.getElementById("num").value;
-var money = 810000;
-mtire(tire);}
-if (myindex == 51) {var carbody = document.getElementById("num").value;
-var money = 4500000;
-mcarbody(carbody);}
-if (myindex == 52) {var boatbody = document.getElementById("num").value;
-var money = 4500000;
-mboatbody(boatbody);}
-if (myindex == 53) {var rowboat = document.getElementById("num").value;
-var money = 19828125;
-mrowboat(rowboat);}
-if (myindex == 54) {var car = document.getElementById("num").value;
-var money = 23623125;
-mcar(car);}
-if (myindex == 55) {var truck = document.getElementById("num").value;
-var money = 51181875;
-mtruck(truck);}
-if (myindex == 56) {var tent = document.getElementById("num").value;
-var money = 90000;
-mtent(tent);}
-if (myindex == 57) {var bandage = document.getElementById("num").value;
-var money = 182250;
-mbandage(bandage);}
-if (myindex == 58) {var antidote = document.getElementById("num").value;
-var money = 307500;
-mantidote(antidote);}
-if (myindex == 59) {var flashlight = document.getElementById("num").value;
-var money = 430312;
-mflashlight(flashlight);}
-if (myindex == 60) {var fist = document.getElementById("num").value;
-var money = 1566750;
-mfist(fist);}
-if (myindex == 61) {var stick = document.getElementById("num").value;
-var money = 3375000;
-mstick(stick);}
-if (myindex == 62) {var blade = document.getElementById("num").value;
-var money = 3543750;
-mblade(blade);}
-if (myindex == 63) {var sword = document.getElementById("num").value;
-var money = 18225000;
-msword(sword);}
-if (myindex == 64) {var axe = document.getElementById("num").value;
-var money = 18432000;
-maxe(axe);}
-if (myindex == 65) {var halberd = document.getElementById("num").value;
-var money = 18900000;
-mhalberd(halberd);}
-if (myindex == 66) {var belt = document.getElementById("num").value;
-var money = 522000;
-mbelt(belt);}
-if (myindex == 67) {var bracers = document.getElementById("num").value;
-var money = 2137500;
-mbracers(bracers);}
-if (myindex == 68) {var leggings = document.getElementById("num").value;
-var money = 2523000;
-mleggings(leggings);}
-if (myindex == 69) {var helm = document.getElementById("num").value;
-var money = 3150000;
-mhelm(helm);}
-if (myindex == 70) {var breastplate = document.getElementById("num").value;
-var money = 3198000;
-mbreastplate(breastplate);}
-if (myindex == 71) {var herbageperfume = document.getElementById("num").value;
-var money = 112500;
-mherbageperfume(herbageperfume);}
-if (myindex == 72) {var sunflowerperfume = document.getElementById("num").value;
-var money = 139500;
-msunflowerperfume(sunflowerperfume);}
-if (myindex == 73) {var herbperfume = document.getElementById("num").value;
-var money = 143500;
-mherbperfume(herbperfume);}
-if (myindex == 74) {var lilyperfume = document.getElementById("num").value;
-var money = 163500;
-mlilyperfume(lilyperfume);}
-if (myindex == 75) {var roseperfume = document.getElementById("num").value;
-var money = 172500;
-mroseperfume(roseperfume);}
-if (myindex == 76) {var compactdisk = document.getElementById("num").value;
-var money = 337500;
-mcompactdisk(compactdisk);}
-if (myindex == 77) {var flute = document.getElementById("num").value;
-var money = 1687500;
-mflute(flute);}
-if (myindex == 78) {var guitar = document.getElementById("num").value;
-var money = 2227500;
-mguitar(guitar);}
-if (myindex == 79) {var mitt = document.getElementById("num").value;
-var money = 1860000;
-mmitt(mitt);}
-if (myindex == 80) {var bat = document.getElementById("num").value;
-var money = 7706250;
-mbat(bat);}
-if (myindex == 81) {var landmine = document.getElementById("num").value;
-var money = 717187;
-mlandmine(landmine);}
-if (myindex == 82) {var rocket = document.getElementById("num").value;
-var money = 3009375;
-mrocket(rocket);}
-if (myindex == 83) {var antimissile = document.getElementById("num").value;
-var money = 4500000;
-mantimissile(antimissile);}
-if (myindex == 84) {var missile = document.getElementById("num").value;
-var money = 6963750;
-mmissile(missile);}
-if (myindex == 85) {var nuclearbomb = document.getElementById("num").value;
-var money = 24412500;
-mnuclearbomb(nuclearbomb);}
-if (myindex == 86) {var planebody = document.getElementById("num").value;
-var money = 6918750;
-mplanebody(planebody);}
-if (myindex == 87) {var glider = document.getElementById("num").value;
-var money = 61762500;
-mglider(glider);}
-var moneynum = document.getElementById("num").value;
-calmoney(money,moneynum);
-disptotal();
+	reset();
+	var myindex=parseInt(document.getElementById("select").value);
+	console.log(myindex+1);
+	switch (myindex)
+	{
+		case 1:
+		money = 7500;
+		console.log(document.getElementById("num").value);
+		mcopper(document.getElementById("num").value);
+		break;
+		case 2:
+		money = 15000;
+		msteel(document.getElementById("num").value);
+		break;
+		case 3:
+		money = 37500;
+		mpreciousmetal(document.getElementById("num").value);
+		break;
+		case 4:
+		money = 7500;
+		msilicon(document.getElementById("num").value);
+		break;
+		case 5:
+		money = 15000;
+		mgem(document.getElementById("num").value); 
+		break;
+		case 6:
+		money = 37500;
+		msulfur(document.getElementById("num").value);
+		break;
+		case 7:
+		money = 7500;
+		mtapwater(document.getElementById("num").value);
+		break;
+		case 8:
+		money = 15000;
+		mdistilledwater(document.getElementById("num").value);
+		break;
+		case 9:
+		money = 7500;
+		mnormaltimber(document.getElementById("num").value);
+		break;
+		case 10:
+		money = 15000;
+		mhightimber(document.getElementById("num").value);
+		break;
+		case 11:
+		money = 37500;
+		mrefinedtimber(document.getElementById("num").value);
+		break;
+		case 12:
+		money = 7500;
+		mnaturalgas(document.getElementById("num").value);
+		break;
+		case 13:
+		money = 15000;
+		mpetroleum(document.getElementById("num").value);
+		break;
+		case 14:
+		money = 37500;
+		mliquidfuel(document.getElementById("num").value);
+		break;
+		case 15:
+		money = 31650;
+		mchickenriceball(document.getElementById("num").value);
+		break;
+		case 16:
+		money = 57750;
+		mbbqcorn(document.getElementById("num").value);
+		break;
+		case 17:
+		money = 69000;
+		msteamedcrab(document.getElementById("num").value);
+		break;
+		case 18:
+		money = 70500;
+		msteamedroll(document.getElementById("num").value);
+		break;
+		case 19:
+		money = 170850;
+		mbeershrimp(document.getElementById("num").value);
+		break;
+		case 20:
+		money = 84750;
+		mmilk(document.getElementById("num").value);
+		break;
+		case 21:
+		money = 90900;
+		mbeer(document.getElementById("num").value);
+		break;
+		case 22:
+		money = 148500;
+		mmedicatedwine(document.getElementById("num").value);
+		break;
+		case 23:
+		money = 254250;
+		mwhiskey(document.getElementById("num").value);
+		break;
+		case 24:
+		money = 73500;
+		mgloves(document.getElementById("num").value);
+		break;
+		case 25:
+		money = 90000;
+		mboots(document.getElementById("num").value);
+		break;
+		case 26:
+		money = 2052000;
+		mcloak(document.getElementById("num").value);
+		break;
+		case 27:
+		money = 2908500;
+		mpearljewel(document.getElementById("num").value);
+		break;
+		case 28:
+		money = 3937500;
+		mgemjewel(document.getElementById("num").value);
+		break;
+		case 29:
+		money = 45000;
+		mglass(document.getElementById("num").value);
+		break;
+		case 30:
+		money = 337500;
+		mboard(document.getElementById("num").value);
+		break;
+		case 31:
+		money = 703500;
+		mbed(document.getElementById("num").value);
+		break;
+		case 32:
+		money = 2235937;
+		mtelevision(document.getElementById("num").value);
+		break;
+		case 33:
+		money = 3445312;
+		maudio(document.getElementById("num").value);
+		break;
+		case 34:
+		money = 4078125;
+		mairconditioner(document.getElementById("num").value);
+		break;
+		case 35:
+		money = 45000;
+		mbarrel(document.getElementById("num").value);
+		break;
+		case 36:
+		money = 151875;
+		mfishingrod(document.getElementById("num").value);
+		break;
+		case 37:
+		money = 180000;
+		mtool(document.getElementById("num").value);
+		break;
+		case 38:
+		money = 180000;
+		mtool(document.getElementById("num").value);
+		break;
+		case 39:
+		money = 180000;
+		mtool(document.getElementById("num").value);
+		break;
+		case 40:
+		money = 180000;
+		mtool(document.getElementById("num").value);
+		break;
+		case 41:
+		money = 180000;
+		mtool(document.getElementById("num").value);
+		break;
+		case 42:
+		money = 45000;
+		mmanmadefibers(document.getElementById("num").value);
+		break;
+		case 43:
+		money = 56250;
+		mplastic(document.getElementById("num").value);
+		break;
+		case 44:
+		money = 67500;
+		mrubber(document.getElementById("num").value);
+		break;
+		case 45:
+		money = 225000;
+		mmold(document.getElementById("num").value);
+		break;
+		case 46:
+		money = 562500;
+		mmechanicalstructure(document.getElementById("num").value);
+		break;
+		case 47:
+		money = 5568750;
+		mengine(document.getElementById("num").value);
+		break;
+		case 48:
+		money = 140625;
+		mwire(document.getElementById("num").value);
+		break;
+		case 49:
+		money = 900000;
+		mintegratedcircuit(document.getElementById("num").value);
+		break;
+		case 50:
+		money = 810000;
+		mtire(document.getElementById("num").value);
+		break;
+		case 51:
+		money = 4500000;
+		mcarbody(document.getElementById("num").value);
+		break;
+		case 52:
+		money = 4500000;
+		mboatbody(document.getElementById("num").value);
+		break;
+		case 53:
+		money = 19828125;
+		mrowboat(document.getElementById("num").value);
+		break;
+		case 54:
+		money = 23623125;
+		mcar(document.getElementById("num").value);
+		break;
+		case 55:
+		money = 51181875;
+		mtruck(document.getElementById("num").value);
+		break;
+		case 56:
+		money = 90000;
+		mtent(document.getElementById("num").value);
+		break;
+		case 57:
+		money = 182250;
+		mbandage(document.getElementById("num").value);
+		break;
+		case 58:
+		money = 307500;
+		mantidote(document.getElementById("num").value);
+		break;
+		case 59:
+		money = 430312;
+		mflashlight(document.getElementById("num").value);
+		break;
+		case 60:
+		money = 1566750;
+		mfist(document.getElementById("num").value);
+		break;
+		case 61:
+		money = 3375000;
+		mstick(document.getElementById("num").value);
+		break;
+		case 62:
+		money = 3543750;
+		mblade(document.getElementById("num").value);
+		break;
+		case 63:
+		money = 18225000;
+		msword(document.getElementById("num").value);
+		break;
+		case 64:
+		money = 18432000;
+		maxe(document.getElementById("num").value);
+		break;
+		case 65:
+		money = 18900000;
+		mhalberd(document.getElementById("num").value);
+		break;
+		case 66:
+		money = 522000;
+		mbelt(document.getElementById("num").value);
+		break;
+		case 67:
+		money = 2137500;
+		mbracers(document.getElementById("num").value);
+		break;
+		case 68:
+		money = 2523000;
+		mleggings(document.getElementById("num").value);
+		break;
+		case 69:
+		money = 3150000;
+		mhelm(document.getElementById("num").value);
+		break;
+		case 70:
+		money = 3198000;
+		mbreastplate(document.getElementById("num").value);
+		break;
+		case 71:
+		money = 112500;
+		mherbageperfume(document.getElementById("num").value);
+		break;
+		case 72:
+		money = 139500;
+		msunflowerperfume(document.getElementById("num").value);
+		break;
+		case 73:
+		money = 143500;
+		mherbperfume(document.getElementById("num").value);
+		break;
+		case 74:
+		money = 163500;
+		mlilyperfume(document.getElementById("num").value);
+		break;
+		case 75:
+		money = 172500;
+		mroseperfume(document.getElementById("num").value);
+		break;
+		case 76:
+		money = 337500;
+		mcompactdisk(document.getElementById("num").value);
+		break;
+		case 77: 
+		money = 1687500;
+		mflute(document.getElementById("num").value);
+		break;
+		case 78:
+		money = 2227500;
+		mguitar(document.getElementById("num").value);
+		break;
+		case 79:
+		money = 1860000;
+		mmitt(document.getElementById("num").value);
+		break;
+		case 80:
+		money = 7706250;
+		mbat(document.getElementById("num").value);
+		break;
+		case 81: 
+		money = 717187;
+		mlandmine(document.getElementById("num").value);
+		break;
+		case 82:
+		money = 3009375;
+		mrocket(document.getElementById("num").value);
+		break;
+		case 83:
+		money = 4500000;
+		mantimissile(document.getElementById("num").value);
+		break;
+		case 84:
+		money = 6963750;
+		mmissile(document.getElementById("num").value);
+		break;
+		case 85:
+		money = 24412500;
+		mnuclearbomb(document.getElementById("num").value);
+		break;
+		case 86:
+		money = 6918750;
+		mplanebody(document.getElementById("num").value);
+		break;
+		case 87:
+		money = 61762500;
+		mglider(document.getElementById("num").value);
+		break;
+	}
+
+	moneynum = document.getElementById("num").value;
+	calmoney(money,moneynum);
+	disptotal();
 }
 
 function reset() {
-document.area1.TextArea1.value = "";
-document.area2.TextArea2.value = "";
-document.area3.TextArea3.value = "";
-document.area4.TextArea4.value = "";
-document.getElementById("Label1").innerText = "";
-tfuel = 0;
-twood = 0;
-tmetal = 0;
-tstone = 0;
-twater = 0;
+	document.area1.TextArea1.value = "";
+	document.area2.TextArea2.value = "";
+	document.area3.TextArea3.value = "";
+	document.area4.TextArea4.value = "";
+	document.getElementById("Label1").innerText = "";
+	tfuel = 0;
+	twood = 0;
+	tmetal = 0;
+	tstone = 0;
+	twater = 0;
 }
 
 function disptotal() {
-var tmp = "總計所需基礎資源："+"<br />";
-if (tmetal > 0 ) {tmp += "金屬： "+tmetal+"<br />";}
-if (tstone > 0 ) {tmp += "原石： "+tstone+"<br />";}
-if (tfuel > 0 ) {tmp += "燃料： "+tfuel+"<br />";}
-if (twood > 0 ) {tmp += "原木： "+twood+"<br />";}
-if (twater > 0 ) {tmp += "清水： "+twater;}
-document.getElementById("Label1").innerHTML = tmp;
+	var tmp = "總計所需基礎資源："+"<br />";
+	if (tmetal > 0 ) {tmp += "金屬： "+tmetal+"<br />";}
+	if (tstone > 0 ) {tmp += "原石： "+tstone+"<br />";}
+	if (tfuel > 0 ) {tmp += "燃料： "+tfuel+"<br />";}
+	if (twood > 0 ) {tmp += "原木： "+twood+"<br />";}
+	if (twater > 0 ) {tmp += "清水： "+twater;}
+	document.getElementById("Label1").innerHTML = tmp;
 }
 function display(str) {
-if (labelctrl == 1) {
-tmp2 = document.area1.TextArea1.value;
-tmp = document.area1.TextArea1.value+str;
-if ( tmp2  != null) {
-document.area1.TextArea1.value = tmp+br;} 
-else {
-document.area1.TextArea1.value = str+br;}
-}
+	if (labelctrl == 1) {
+		tmp2 = document.area1.TextArea1.value;
+		tmp = document.area1.TextArea1.value+str;
+	if ( tmp2  != null) {
+		document.area1.TextArea1.value = tmp+br;} 
+	else {
+		document.area1.TextArea1.value = str+br;}
+	}
 
 if (labelctrl == 2) {
 tmp2 = document.area2.TextArea2.value;
