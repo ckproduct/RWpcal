@@ -1,3 +1,8 @@
+/* Add this at the top */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -8,7 +13,7 @@ body {
 }
 
 #game {
-    max-width: 800px;
+    max-width: 800px; /* Keep max width */
     margin: 20px auto;
     background-color: #162447; /* 稍淺的藍色背景 */
     padding: 25px;
@@ -17,83 +22,126 @@ body {
 }
 
 h1, h2, h3 {
-    color: #1f4068; /* 藍色標題 */
     color: #a4dded; /* 淺藍色標題 */
     border-bottom: 1px solid #4a4a6a;
     padding-bottom: 5px;
     margin-bottom: 15px;
+     margin-top: 0; /* Reset margin top for headings */
 }
+h3 {
+     font-size: 1.1em; /* Slightly smaller facility titles */
+     margin-bottom: 10px;
+}
+
 
 h1 {
     text-align: center;
     color: #f1f1f1; /* 白色主標題 */
+    margin-bottom: 20px; /* Add space below main title */
+}
+
+/* Canvas Styling */
+#space-canvas {
+    display: block; /* Remove extra space below */
+    width: 100%; /* Make canvas responsive within the container */
+    height: 150px; /* Fixed height */
+    background-color: #000010; /* Very dark blue/black for space */
+    border-radius: 5px;
+    margin-bottom: 25px; /* Space between canvas and resources */
+    border: 1px solid #4a4a6a; /* Optional border */
 }
 
 
-#resource-dashboard, #facility-management {
+#resource-dashboard {
     margin-bottom: 30px;
-    background-color: #1b1b2f; /* 比 #162447 稍深的背景 */
+    background-color: #1b1b2f;
     padding: 15px;
     border-radius: 5px;
 }
 
 .resource {
     margin-bottom: 10px;
-    font-size: 1.1em;
-    padding: 5px;
-    border-left: 3px solid #4a91f2; /* 藍色資源標示 */
-    background-color: #24345c; /* 比#1b1b2f 稍淺 */
+    font-size: 1em; /* Slightly smaller resource text */
+    padding: 8px; /* Adjust padding */
+    border-left: 3px solid #4a91f2;
+    background-color: #24345c;
     border-radius: 3px;
+    display: flex; /* Use flex for better alignment */
+    justify-content: space-between; /* Space out name and values */
+    align-items: center;
 }
 
 .resource span {
     font-weight: bold;
-    color: #f5f5f5; /* 白色數字 */
-    min-width: 60px; /* 給數字一些空間 */
-    display: inline-block; /* 讓 min-width 生效 */
+    color: #f5f5f5;
+    background-color: rgba(0,0,0,0.1); /* Subtle background for numbers */
+    padding: 2px 5px;
+    border-radius: 3px;
+    min-width: 70px; /* Ensure space for numbers like "100.5 K/s" */
+    text-align: right;
+}
+.resource span:first-of-type { /* Target the amount span */
+     margin-right: 5px; /* Space between amount and rate */
+}
+
+
+/* Facility Layout - Flexbox */
+#facility-management {
+    margin-bottom: 30px;
+    background-color: #1b1b2f;
+    padding: 10px; /* Reduce padding slightly */
+    border-radius: 5px;
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute space around items */
 }
 
 .facility {
-    border: 1px solid #4a4a6a; /* 深灰色邊框 */
+    border: 1px solid #4a4a6a;
     padding: 15px;
-    margin-bottom: 15px;
+    margin: 10px; /* Add margin for spacing between facility boxes */
     border-radius: 5px;
-    background-color: #24345c; /* 與資源區塊同色 */
+    background-color: #24345c;
     transition: background-color 0.3s ease;
+    width: calc(50% - 20px); /* Each item takes up roughly half the width, minus margin */
+    min-width: 250px; /* Prevent items from becoming too narrow */
+    display: flex; /* Use flex for internal layout too */
+    flex-direction: column; /* Stack content vertically */
 }
 
 .facility:hover {
-     background-color: #2d4070; /* 滑鼠懸停時稍亮 */
+     background-color: #2d4070;
 }
 
-
 .facility p {
-    margin: 5px 0;
+    margin: 4px 0; /* Adjust vertical spacing */
+    flex-grow: 1; /* Allow text block to grow */
 }
 
 .facility span {
     font-weight: bold;
-    color: #f5f5f5; /* 白色數字 */
+    color: #f5f5f5;
 }
 
 button {
-    background-color: #4a91f2; /* 亮藍色按鈕 */
+    background-color: #4a91f2;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px; /* Slightly smaller buttons */
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
-    margin-top: 10px;
+    font-size: 0.95em; /* Slightly smaller button text */
+    margin-top: auto; /* Push button to the bottom */
     transition: background-color 0.2s ease;
+    align-self: flex-start; /* Align button to the start */
 }
 
 button:hover:not(:disabled) {
-    background-color: #3a7bc8; /* 滑鼠懸停時稍暗 */
+    background-color: #3a7bc8;
 }
 
 button:disabled {
-    background-color: #555; /* 禁用時灰色 */
+    background-color: #555;
     color: #aaa;
     cursor: not-allowed;
     opacity: 0.7;
@@ -101,16 +149,23 @@ button:disabled {
 
 #offline-progress-info {
     margin-top: 15px;
+    padding: 10px;
     font-style: italic;
-    color: #88aaff; /* 淡藍色提示文字 */
+    color: #88aaff;
+    background-color: rgba(74, 145, 242, 0.1); /* Subtle background */
+    border-radius: 4px;
+    text-align: center;
 }
 
 #save-btn, #reset-btn {
     margin-right: 10px;
-    background-color: #e43f5a; /* 重設按鈕用紅色 */
+    background-color: #e43f5a;
+    margin-top: 15px; /* Ensure spacing */
+    padding: 10px 15px; /* Restore padding for main buttons */
+    font-size: 1em;
 }
 #save-btn {
-     background-color: #1f6f54; /* 儲存按鈕用綠色 */
+     background-color: #1f6f54;
 }
 
 #save-btn:hover:not(:disabled) {
