@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a2e; /* 深藍紫色背景 */
+    color: #e0e0e0; /* 淺灰色文字 */
+    margin: 0;
+    padding: 20px;
+}
+
+#game {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #162447; /* 稍淺的藍色背景 */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #1f4068; /* 藍色標題 */
+    color: #a4dded; /* 淺藍色標題 */
+    border-bottom: 1px solid #4a4a6a;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #f1f1f1; /* 白色主標題 */
+}
+
+
+#resource-dashboard, #facility-management {
+    margin-bottom: 30px;
+    background-color: #1b1b2f; /* 比 #162447 稍深的背景 */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.resource {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    padding: 5px;
+    border-left: 3px solid #4a91f2; /* 藍色資源標示 */
+    background-color: #24345c; /* 比#1b1b2f 稍淺 */
+    border-radius: 3px;
+}
+
+.resource span {
+    font-weight: bold;
+    color: #f5f5f5; /* 白色數字 */
+    min-width: 60px; /* 給數字一些空間 */
+    display: inline-block; /* 讓 min-width 生效 */
+}
+
+.facility {
+    border: 1px solid #4a4a6a; /* 深灰色邊框 */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #24345c; /* 與資源區塊同色 */
+    transition: background-color 0.3s ease;
+}
+
+.facility:hover {
+     background-color: #2d4070; /* 滑鼠懸停時稍亮 */
+}
+
+
+.facility p {
+    margin: 5px 0;
+}
+
+.facility span {
+    font-weight: bold;
+    color: #f5f5f5; /* 白色數字 */
+}
+
+button {
+    background-color: #4a91f2; /* 亮藍色按鈕 */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #3a7bc8; /* 滑鼠懸停時稍暗 */
+}
+
+button:disabled {
+    background-color: #555; /* 禁用時灰色 */
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#offline-progress-info {
+    margin-top: 15px;
+    font-style: italic;
+    color: #88aaff; /* 淡藍色提示文字 */
+}
+
+#save-btn, #reset-btn {
+    margin-right: 10px;
+    background-color: #e43f5a; /* 重設按鈕用紅色 */
+}
+#save-btn {
+     background-color: #1f6f54; /* 儲存按鈕用綠色 */
+}
+
+#save-btn:hover:not(:disabled) {
+    background-color: #185a44;
+}
+#reset-btn:hover:not(:disabled) {
+    background-color: #c03048;
+}
