@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星際拓荒者 (Cosmic Pioneer Idle)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>星際拓荒者</h1>
+
+        <!-- 資源儀表板 -->
+        <div id="resource-dashboard">
+            <h2>資源狀態</h2>
+            <div class="resource">
+                能量 (Energy): <span id="energy-amount">0</span> (<span id="energy-rate">0</span>/s)
+            </div>
+            <div class="resource">
+                原始礦石 (Ore): <span id="ore-amount">0</span> (<span id="ore-rate">0</span>/s)
+            </div>
+            <div class="resource">
+                提煉金屬 (Metal): <span id="metal-amount">0</span> (<span id="metal-rate">0</span>/s)
+            </div>
+            <div class="resource">
+                合成晶體 (Crystal): <span id="crystal-amount">0</span> (<span id="crystal-rate">0</span>/s)
+            </div>
+            <div class="resource">
+                暗物質 (Dark Matter): <span id="darkMatter-amount">0</span> (<span id="darkMatter-rate">0</span>/s)
+            </div>
+             <p id="offline-progress-info"></p> <!-- 顯示離線進度訊息 -->
+        </div>
+
+        <!-- 設施管理區 -->
+        <div id="facility-management">
+            <h2>飛船設施</h2>
+
+            <!-- 採礦光束 -->
+            <div class="facility" id="facility-miningBeam">
+                <h3>採礦光束 (Mining Beam)</h3>
+                <p>等級: <span id="miningBeam-level">0</span></p>
+                <p>產量: <span id="miningBeam-production">0</span> 礦石/秒</p>
+                <p>升級需要: <span id="miningBeam-cost">10</span> 能量</p>
+                <button id="build-miningBeam-btn">建造/升級</button>
+            </div>
+
+            <!-- 冶煉廠 -->
+            <div class="facility" id="facility-smelter">
+                <h3>冶煉廠 (Smelter)</h3>
+                <p>等級: <span id="smelter-level">0</span></p>
+                <p>產量: <span id="smelter-production">0</span> 金屬/秒</p>
+                <p>升級需要: <span id="smelter-cost">50</span> 礦石</p>
+                <button id="build-smelter-btn">建造/升級</button>
+            </div>
+
+            <!-- 晶體培養室 -->
+            <div class="facility" id="facility-crystalLab">
+                <h3>晶體培養室 (Crystal Lab)</h3>
+                <p>等級: <span id="crystalLab-level">0</span></p>
+                <p>產量: <span id="crystalLab-production">0</span> 晶體/秒</p>
+                <p>升級需要: <span id="crystalLab-cost">200</span> 金屬</p>
+                <button id="build-crystalLab-btn">建造/升級</button>
+            </div>
+
+            <!-- 暗物質收集器 -->
+            <div class="facility" id="facility-darkMatterCollector">
+                <h3>暗物質收集器 (Dark Matter Collector)</h3>
+                <p>等級: <span id="darkMatterCollector-level">0</span></p>
+                <p>產量: <span id="darkMatterCollector-production">0</span> 暗物質/秒</p>
+                <p>升級需要: <span id="darkMatterCollector-cost">1000</span> 晶體</p>
+                <button id="build-darkMatterCollector-btn">建造/升級</button>
+            </div>
+
+        </div>
+         <button id="save-btn">手動儲存</button>
+         <button id="reset-btn">重設遊戲</button>
+    </div>
+
+    <script src="idle_game_script.js"></script>
+</body>
+</html>
