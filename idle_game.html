@@ -10,6 +10,11 @@
     <div id="game">
         <h1>星際拓荒者</h1>
 
+        <!-- Canvas for space animation -->
+        <canvas id="space-canvas" width="800" height="150">
+            Your browser does not support the HTML canvas tag.
+        </canvas>
+
         <!-- 資源儀表板 -->
         <div id="resource-dashboard">
             <h2>資源狀態</h2>
@@ -35,47 +40,45 @@
         <div id="facility-management">
             <h2>飛船設施</h2>
 
-            <!-- 採礦光束 -->
+            <!-- Facility items will be styled by CSS to be two per row -->
             <div class="facility" id="facility-miningBeam">
-                <h3>採礦光束 (Mining Beam)</h3>
+                <h3>採礦光束</h3> <!-- Simplified title -->
                 <p>等級: <span id="miningBeam-level">0</span></p>
-                <p>產量: <span id="miningBeam-production">0</span> 礦石/秒</p>
+                <p>產量: <span id="miningBeam-production">0</span> 礦石/s</p>
                 <p>升級需要: <span id="miningBeam-cost">10</span> 能量</p>
                 <button id="build-miningBeam-btn">建造/升級</button>
             </div>
 
-            <!-- 冶煉廠 -->
             <div class="facility" id="facility-smelter">
-                <h3>冶煉廠 (Smelter)</h3>
+                <h3>冶煉廠</h3>
                 <p>等級: <span id="smelter-level">0</span></p>
-                <p>產量: <span id="smelter-production">0</span> 金屬/秒</p>
+                <p>產量: <span id="smelter-production">0</span> 金屬/s</p>
                 <p>升級需要: <span id="smelter-cost">50</span> 礦石</p>
                 <button id="build-smelter-btn">建造/升級</button>
             </div>
 
-            <!-- 晶體培養室 -->
             <div class="facility" id="facility-crystalLab">
-                <h3>晶體培養室 (Crystal Lab)</h3>
+                <h3>晶體培養室</h3>
                 <p>等級: <span id="crystalLab-level">0</span></p>
-                <p>產量: <span id="crystalLab-production">0</span> 晶體/秒</p>
+                <p>產量: <span id="crystalLab-production">0</span> 晶體/s</p>
                 <p>升級需要: <span id="crystalLab-cost">200</span> 金屬</p>
                 <button id="build-crystalLab-btn">建造/升級</button>
             </div>
 
-            <!-- 暗物質收集器 -->
             <div class="facility" id="facility-darkMatterCollector">
-                <h3>暗物質收集器 (Dark Matter Collector)</h3>
+                <h3>暗物質收集器</h3>
                 <p>等級: <span id="darkMatterCollector-level">0</span></p>
-                <p>產量: <span id="darkMatterCollector-production">0</span> 暗物質/秒</p>
+                <p>產量: <span id="darkMatterCollector-production">0</span> 暗物質/s</p>
                 <p>升級需要: <span id="darkMatterCollector-cost">1000</span> 晶體</p>
                 <button id="build-darkMatterCollector-btn">建造/升級</button>
             </div>
+             <!-- Add more facilities here, they will automatically wrap -->
 
         </div>
          <button id="save-btn">手動儲存</button>
          <button id="reset-btn">重設遊戲</button>
     </div>
 
-    <script src="idle_game_script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
